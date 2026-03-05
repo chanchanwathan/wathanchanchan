@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chan Chan Wathan</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=DM+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════ -->
+  <nav>
+    <div class="nav-logo">Chan Chan Wathan<em>.</em></div>
+    <ul class="nav-links">
+      <li><button onclick="show('home')" id="nb-home" class="active">Home</button></li>
+      <li><button onclick="show('projects')" id="nb-projects">Projects</button></li>
+      <li><button onclick="show('leadership')" id="nb-leadership">Leadership</button></li>
+      <li><button onclick="show('internship')" id="nb-internship">Internship</button></li>
+    </ul>
+  </nav>
+
+
+  <!-- ════════════════════════════════════════
+     HOME
+════════════════════════════════════════ -->
+  <div class="page active" id="home">
+
+    <!-- ── Hero ── -->
+    <section class="hero-band">
+      <div class="home-text">
+        <div class="eyebrow">Informatin Technology Student</div>
+        <h1>Hey, I'm <span class="pop">Chan Chan Wathan.</span></h1>
+        <p>Passionate about turning ideas into impactful software. I love solving difficult problems, leading teams, and
+          making technology more reliable. Let's create something that lasts.</p>
+        <div class="btn-row">
+          <button class="btn btn-green" onclick="show('projects')">See My Work</button>
+          <button class="btn btn-blue" onclick="scrollToAbout()">About Me</button>
+        </div>
+      </div>
+
+      <div class="home-visual">
+        <div class="id-card">
+          <div class="fbadge fy">🏆 Director's Honour Roll</div>
+          <div class="id-initial-ring"><span class="id-initial">Chan</span></div>
+          <div class="id-school">Diploma in Information Technology @ Singapore Polytechnic</div>
+          <div class="id-divider"></div>
+          <div class="id-chips">
+            <span class="id-chip">Software Engineer</span>
+            <span class="id-chip">Leader</span>
+            <span class="id-chip">Environmentalist</span>
+          </div>
+          <br>
+          <div class="fbadge fg"> GPA 3.86 </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Stats ── -->
+    <div class="stats-row reveal-group">
+      <div class="stat-cell reveal"><span class="stat-num">35</span><span class="stat-lbl">Projects Built</span></div>
+      <div class="stat-cell reveal"><span class="stat-num">1</span><span class="stat-lbl">Internship</span></div>
+      <div class="stat-cell reveal"><span class="stat-num">5</span><span class="stat-lbl">Leadership Roles</span></div>
+      <div class="stat-cell reveal"><span class="stat-num">2</span><span class="stat-lbl">Majors / Certs</span></div>
+      <div class="stat-cell reveal"><span class="stat-num">2026</span><span class="stat-lbl">Graduating</span></div>
+    </div>
+
+    <!-- ── About section ── -->
+    <div class="about-section" id="about-anchor">
+
+      <div class="about-section-header reveal">
+        <div class="eyebrow">Nice to meet you</div>
+        <h2>About Me</h2>
+        <p>Student, Builder, Leader, Environmentalist, Harry Potter fan</p>
+      </div>
+
+      <div class="about-grid reveal-group">
+
+        <div class="acard c7 reveal reveal-left">
+          <div class="acard-ico">👋</div>
+          <h3>Who I Am</h3>
+          <p>I'm Chan Chan Wathan, a graduating IT student at Singapore Polytechnic with a love for software engineering
+            and systems thinking. What drives me is the belief that code is one of the most powerful tools for positive
+            change; whether it's helping a nonprofit streamline operations or building an app that connects communities.
+            I'm endlessly curious, a fast learner, and happiest when working on a team building something meaningful.
+          </p>
+        </div>
+
+        <div class="acard c5 reveal reveal-right">
+          <div class="acard-ico">🎓</div>
+          <h3>Education</h3>
+          <p><strong>Diploma in Information Technology</strong><br />Singapore Polytechnic 2023 - 2026<br />GPA: 3.86
+            / 4.0 </p>
+          <br />
+          <p><strong>Relevant Coursework:</strong><br /> Front-End Development, Back-End Development, Operating Systems,
+            Software Engineering, Database Systems, User Interaction Design, Cyber Security Practices, Continuous
+            Integration and Continuous Delivery </p>
+        </div>
+
+        <div class="acard biz c12 reveal">
+          <div class="acard-ico">📊</div>
+          <h3>Business Certificate - Bridging Tech &amp; Strategy</h3>
+          <p>Alongside my IT diploma, I am pursuing a <strong>Business Certificate from Singapore Polytechnic</strong>,
+            with coursework in Digital Marketing, Finance Toolkit and Human Capital Management. As someone passionate
+            about technology, I've always wanted to understand the broader concepts. How do companies grow? How do they
+            manage people effectively? How do they turn ideas into sustainable values? This interdisciplinary path fuels
+            my passion for building products that are not just technically sound, but commercially viable and
+            user-centred.</p>
+        </div>
+
+        <div class="acard c6 reveal reveal-left">
+          <div class="acard-ico">💻</div>
+          <h3>Technical Skills</h3>
+          <p>Full-stack focus with a growing passion for machine learning and systems design.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Java</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Git</span>
+            <span class="tag yw">Figma</span>
+            <span class="tag yw">REST APIs</span>
+            <span class="tag yw">Linux</span>
+          </div>
+        </div>
+
+        <div class="acard biz c6 reveal reveal-right">
+          <div class="acard-ico">🤝</div>
+          <h3>Business &amp; Soft Skills</h3>
+          <p>The Business Certificate has sharpened skills that complement my engineering work every day.</p>
+          <div class="tags">
+            <span class="tag bz">Marketing Strategies</span>
+            <span class="tag bz">Financial Accounting</span>
+            <span class="tag bz">Entrepreneurship</span>
+            <span class="tag bz">Product Thinking</span>
+            <span class="tag bz">Team Leadership</span>
+            <span class="tag bz">Public Speaking</span>
+          </div>
+        </div>
+
+        <div class="acard env c8 reveal reveal-left">
+          <div class="acard-ico">🌿</div>
+          <h3>Passion for the Environment</h3>
+          <p>I genuinely believe technology and sustainability are partners, not in conflict. I'm passionate about using
+            CS to tackle climate challenges, from optimising energy usage in data centres to building tools that help
+            people make greener choices. The Business Certificate has helped me understand the economics of green tech,
+            making me better equipped to champion sustainable solutions at scale. I dream of working at the intersection
+            of climate and software because the planet deserves our best code.</p>
+        </div>
+
+        <div class="acard hp c4 reveal reveal-right">
+          <div class="acard-ico">⚡</div>
+          <h3>Fun Fact: Harry Potter Fan</h3>
+          <p>Harry Potter shaped how I think about <strong>leadership and problem solving</strong>. Hermione taught me
+            preparation is a superpower. Dumbledore showed that the best leaders empower others. Harry reminded me that
+            courage is showing up despite fear. I bring these lessons to every team I lead.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <footer>
+      <p><strong>Chan Chan Wathan</strong> - Information Technology Student </p>
+    </footer>
+  </div>
+
+
+  <!-- ════════════════════════════════════════
+     PROJECTS
+════════════════════════════════════════ -->
+  <div class="page" id="projects">
+
+    <section class="hero-band">
+      <div class="page-intro" style="padding-top:0">
+        <div class="eyebrow">What I've Built</div>
+        <h1>Top 3 Projects</h1>
+        <p>Every project has a story.</p>
+      </div>
+    </section>
+
+    <div class="proj-list reveal-group">
+
+      <div class="prow reveal">
+        <div class="prow-icon prow-icon--eco"></div>
+        <div class="prow-body">
+          <h3>Code For Fun - MOE Project (Internship) </h3>
+          <p>A full-stack web application to manage a government programme named "Code For Fun", organized by MOE and
+            IMDA. Application submissions, approvals, lessons, class dates and payments are processed in the web app.
+          </p>
+          <div class="ptags">
+            <span class="ptag">Canvas</span>
+            <span class="ptag">Figma</span>
+            <span class="ptag">PostgreSQL</span>
+            <span class="ptag">Google API</span>
+            <span class="ptag">Node.js</span>
+            <span class="ptag">HTML</span>
+            <span class="ptag">CSS</span>
+            <span class="ptag">Javascript</span>
+            <span class="ptag">Playwright</span>
+            <span class="ptag">Docker</span>
+          </div>
+        </div>
+        <div class="prow-side">
+          <div class="prow-num">01</div>
+          <span class="pstatus">✓ Completed</span>
+        </div>
+      </div>
+
+      <div class="prow reveal">
+        <div class="prow-icon prow-icon--eco"></div>
+        <div class="prow-body">
+          <h3>Scratch Project Competition - MOE Project (Internship) </h3>
+          <p> A platform to manage the Scratch Project competition among government schools. It involves account
+            creation,
+            project submissions, voting systems and leaderboard features.</p>
+          <div class="ptags">
+            <span class="ptag">PostgreSQL</span>
+            <span class="ptag">Google API</span>
+            <span class="ptag">HTML</span>
+            <span class="ptag">CSS</span>
+            <span class="ptag">Javascript</span>
+            <span class="ptag">Playwright</span>
+            <span class="ptag">Docker</span>
+          </div>
+        </div>
+        <div class="prow-side">
+          <div class="prow-num">02</div>
+          <span class="pstatus">✓ Completed</span>
+        </div>
+      </div>
+
+      <div class="prow reveal">
+        <div class="prow-icon prow-icon--eco"></div>
+        <div class="prow-body">
+          <h3> Buskers (iOS application) </h3>
+          <p> A platform to search for talented singers, view their past and future performances, and support them by
+            making payments. This is inspired by social media platforms, but for singers and includes payment features.
+          </p>
+          <div class="ptags">
+            <span class="ptag">Canvas</span>
+            <span class="ptag">Figma</span>
+            <span class="ptag">SwiftUI</span>
+          </div>
+        </div>
+        <div class="prow-side">
+          <div class="prow-num">03</div>
+          <span class="pstatus">✓ Completed</span>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <p><strong>Chan Chan Wathan</strong> - Information Technology Student</p>
+    </footer>
+  </div>
+
+
+  <!-- ════════════════════════════════════════
+     LEADERSHIP
+════════════════════════════════════════ -->
+  <div class="page" id="leadership">
+
+    <section class="hero-band">
+      <div class="page-intro" style="padding-top:0">
+        <div class="eyebrow">Giving Back &amp; Leading Forward</div>
+        <h1>Leadership</h1>
+        <p>Leadership is my strongest skill. I have developed it by taking initiative in technical,
+          academic and community settings. </p>
+      </div>
+    </section>
+
+    <div class="tl-wrap reveal-group">
+
+      <div class="tl-item reveal reveal-left">
+        <div class="tl-dot">📊</div>
+        <div class="tl-card">
+          <div class="tl-role">Projects Leader</div>
+          <div class="tl-org">Software Engineering Internship - Ministry of Education , Singapore</div>
+          <p> I stepped into a leadership role
+            while working on the full-stack development of web applications. I took initiative in
+            coordinating communication between programming and design interns to ensure
+            project alignment. I tracked progress, clarified requirements, and provided regular
+            updates to supervisors. Working across diverse technologies, including design,
+            coding and web deployment platforms, I helped maintain alignment between
+            people with different roles. Through initiative and accountability, I contributed to
+            efficient teamwork and timely project completion. </p>
+          <span class="tl-badge">2025 - 2026</span>
+        </div>
+      </div>
+
+      <div class="tl-item reveal reveal-left">
+        <div class="tl-dot">💡</div>
+        <div class="tl-card">
+          <div class="tl-role">Class Representative</div>
+          <div class="tl-org">Singapore Polytechnic</div>
+          <p>I was elected as a class representative for two semesters, taking responsibility for
+            representing student interests and supporting effective class coordination. I
+            organized class activities, supported collective decision-making, and helped
+            address academic or scheduling issues. I also helped resolve concerns, encourage
+            participation, and contribute to a more organized and inclusive class environment.
+            Through this role, I developed strong communication, organization, and leadership
+            skills while reinforcing the importance of accountability in representing others.</p>
+          <span class="tl-badge">2024 - 2025</span>
+        </div>
+      </div>
+
+      <div class="tl-item reveal reveal-left">
+        <div class="tl-dot">🏕️</div>
+        <div class="tl-card">
+          <div class="tl-role">Orientation Leader</div>
+          <div class="tl-org">Singpore Polytechnic Freshman Orientation Programme 2024</div>
+          <p>Guided a cohort of first-year students through orientation and the transition into Polytechnic life.
+          </p>
+          <span class="tl-badge">2024</span>
+        </div>
+      </div>
+
+      <div class="tl-item reveal reveal-left">
+        <div class="tl-dot">💻</div>
+        <div class="tl-card">
+          <div class="tl-role">Group Leader - Application Development</div>
+          <div class="tl-org">Apple SwiftUI Nano Academy Programme</div>
+          <p>I participated in a program organized by the Apple Swift Developer Academy,
+            Singapore University of Technology and Design, and Singapore Polytechnic, where
+            participants had five days to conceptualize and build an iOS application using
+            SwiftUI. I took on a leadership role by guiding idea development, assigning
+            responsibilities, and creating wireframes to shape the application structure. Despite
+            having no prior experience with macOS, I quickly adapted to using a MacBook and
+            the Apple development environment. On the final day, I led the project presentation
+            at Apple headquarters, clearly explaining our design and technical choices and
+            responding to questions from Apple officers. </p>
+          <span class="tl-badge">2023</span>
+        </div>
+      </div>
+
+      <div class="tl-item reveal reveal-left">
+        <div class="tl-dot">💡</div>
+        <div class="tl-card">
+          <div class="tl-role">English Speaking Club Leader</div>
+          <p>I organized and led free online English-speaking clubs to support learners in my
+            community who lacked access to affordable English education. My tasks included
+            organizing meeting schedules, promoting, managing Zoom meetings, and
+            facilitating conversations. Due to high participation, I recruited and coordinated
+            friends to join as co-leaders, allowing better support for all learners. I introduced
+            breakout rooms to increase speaking opportunities and regularly visited groups to
+            encourage participation and build confidence. This experience strengthened my
+            leadership, organization, teamwork, and communication skills while making a
+            meaningful contribution to my community.
+          </p>
+          <span class="tl-badge">2021 - 2023</span>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <p><strong>Chan Chan Wathan</strong> - Information Technology Student</p>
+    </footer>
+  </div>
+
+
+  <!-- ════════════════════════════════════════
+     INTERNSHIP
+════════════════════════════════════════ -->
+  <div class="page" id="internship">
+
+    <section class="hero-band">
+      <div class="page-intro" style="padding-top:0">
+        <div class="eyebrow">Real-World Experience</div>
+        <h1>Internship</h1>
+      </div>
+    </section>
+
+    <div class="int-grid reveal-group">
+
+      <div class="icard reveal">
+        <div class="ilogo ilogo--green">💻</div>
+        <div class="ibody">
+          <h3>Software Engineering Internship</h3>
+          <div class="ico">Ministry of Education , Singapore</div>
+          <div class="ipe"> April 2025 - February 2026 (Full-time) </div>
+
+          <p>Planning and System Design</p>
+          <div class="ibullets">
+            <div class="ibullet">Developed sitemaps and use case diagrams to outline user roles, goals and
+              interaction flow. </div>
+            <div class="ibullet">Designed wireframes to shape the application structure.</div>
+          </div><br>
+
+          <p>Database Development </p>
+          <div class="ibullets">
+            <div class="ibullet">Designed ERD and developed online database. </div>
+            <div class="ibullet">Established proper relationships between tables.</div>
+          </div><br>
+
+          <p>Backend API and Business Logic Development</p>
+          <div class="ibullets">
+            <div class="ibullet">Developed backend APIs for all key processes.</div>
+            <div class="ibullet">Optimized SQL queries for basic CRUD operations. </div>
+            <div class="ibullet">Implemented authentication and authorization for user login.</div>
+            <div class="ibullet">Built routes, models and controllers.</div>
+          </div><br>
+
+          <p>Frontend User Interface </p>
+          <div class="ibullets">
+            <div class="ibullet">Created dashboards and connected to backend APIs.</div>
+            <div class="ibullet">Developed forms, tables and modals. </div>
+          </div><br>
+
+          <p>System Integration</p>
+          <div class="ibullets">
+            <div class="ibullet">Integrated frontend and backend for smooth communication.</div>
+            <div class="ibullet">Verified role-based data access.</div>
+          </div><br>
+
+          <p>Testing and Refinement </p>
+          <div class="ibullets">
+            <div class="ibullet">Conducted testing across different user roles.</div>
+            <div class="ibullet">Refined the system for reliability and smooth operation. </div>
+          </div><br>
+
+          <p>Deployment </p>
+          <div class="ibullets">
+            <div class="ibullet">Implemented automated CI/CD pipelines. </div>
+            <div class="ibullet">Built Docker images and containers. </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <p><strong>Chan Chan Wathan</strong> - Information Technology Student</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
